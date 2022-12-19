@@ -113,10 +113,71 @@
     ex ) rm 파일이름.\* : 파일이름을 가진 확장자를 모두 지운다.
 
     rm -r 파일이름/ : 모든 파일들을 지우고 디렉토리(폴더)를 지운다.
+    rm -rf : 바로 다 지우기
 
 - cat
 
       - 파일 내용, 텍스트 출력 확인
+
+---
+
+---
+
+<br/>
+
+## [ VIM ]
+
+- vim은 max os 환경에서 shell script, code등을 작성할때 사용한다. ( 그 외 환경에도 사용할 수 있다.)
+
+- 마크다운 등 텍스트 편집기로 사용했다.
+
+### **[ Vim Command ]**
+
+<br/>
+
+- i
+
+      - insert mode
+
+- v
+
+      - visual mode
+
+- d
+
+      - delete
+
+- dd
+
+      - delete a line
+
+- esc
+
+      - back to normal mode
+
+- :w
+
+      - 저장
+
+- :wq
+
+      - 저장하고 나가기
+
+- o
+
+      - insert 전 적어진 문장을 개행 후 insert 적용
+
+- shift + y
+
+      - 잘라내기
+
+- p
+
+      - 붙혀넣기
+
+- u
+
+      - 지운 내용 되돌리기
 
 ---
 
@@ -180,6 +241,22 @@ git config --g core.pager // "cat"
 
 - git remote add 이름 주소 : 원격 저장소와 새로 연결 하는 명령어
 
+- git remote remove 이름 : 원격 저장소 연결된 이름 삭제
+
+- git remote add 이름 주소 : 원격 저장소와 새로 연결 하는 명령어
+
+- git restore 파일명
+
+      add 전 수정된 파일 되돌릴때 / 전부지울 때는 파일명 자리에 . 사용
+
+- git reset HEAD 파일명
+
+      commit 전 스토리지에서 제거하기
+
+- git commit --amend
+
+      바로 직전 commit 메세지 수정하기
+
 ---
 
 ---
@@ -198,4 +275,3 @@ git config --g core.pager // "cat"
 
 - build: 빌드 관련
 - ci: Continuous Integration 관련(지속적 통합)
-
